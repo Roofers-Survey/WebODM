@@ -26,17 +26,17 @@
 	{% else %}
 		
 		{% if no_tasks %}
-			<h3>{% trans 'Welcome! ☺' %}</h3>
+			<h3>{% trans 'Herzlich willkommen! ☺' %}</h3>
 			{% trans 'Select Images and GCP' as upload_images %}
 			<p>
-				{% blocktrans %} To create a map, press the "{{ upload_images }}" button, or drag and drop some images into a project. {% endblocktrans %}
+				{% blocktrans %} Um eine Karte zu erstellen, drücken Sie die "{{ upload_images }}" Schaltfläche oder ziehen Sie einige Bilder per Drag & Drop in ein Projekt. {% endblocktrans %}
 			</p>
 			<p>
 				<ul>
-					<li>{% trans 'You need at least 5 images' %}</li>
-					<li>{% trans 'Images must overlap by 65% or more' %}</li>
-					<li>{% trans 'For great 3D, images must overlap by 83%' %}</li>
-					<li>{% trans 'A <a href="https://github.com/OpenDroneMap/OpenDroneMap/wiki/Running-OpenDroneMap#running-odm-with-ground-control" target="_blank">GCP file</a> is optional, but can increase georeferencing accuracy' %}</li>
+					<li>{% trans 'Sie benötigen mindestens 5 Bilder' %}</li>
+					<li>{% trans 'Bilder müssen sich um 65% oder mehr überlappen' %}</li>
+					<li>{% trans 'Für großartiges 3D müssen sich Bilder um 83% überlappen' %}</li>
+					<li>{% trans 'Eine <a href="https://github.com/OpenDroneMap/OpenDroneMap/wiki/Running-OpenDroneMap#running-odm-with-ground-control" target="_blank">GCP Datei</a> ist optional, kann jedoch die Genauigkeit der Georeferenzierung erhöhen' %}</li>
 				</ul>
 			</p>
 		{% endif %}

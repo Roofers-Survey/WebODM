@@ -5,7 +5,7 @@
 {% block registration_content %}
     {% if form.errors %}
         <div class="alert alert-warning">
-            <p><strong>{% trans "Invalid credentials." %}</strong> {% trans "Note that both fields are case-sensitive." %}</p>
+            <p><strong>{% trans "Ungültige Anmeldeinformationen." %}</strong> {% trans "Beachten Sie, dass bei beiden Feldern zwischen Groß- und Kleinschreibung unterschieden wird." %}</p>
         </div>
     {% endif %}
 
@@ -27,9 +27,9 @@
                 <p><a href="javascript:toggleForgotPasswordHint();">Forgot your password?</a></p>
                 <script>function toggleForgotPasswordHint(){ $("#forgotPasswordHint").toggle(); }</script>
                 <div id="forgotPasswordHint" style="display: none; font-size: 90%; padding: 4px;" class="theme-secondary">
-                    You can reset the administrator password by running the following command:
+                    Sie können das Administratorkennwort zurücksetzen, indem Sie den folgenden Befehl ausführen:
                     <span class="theme-background-highlight" style="padding: 4px; margin: 8px 0; display: inline-block;">./webodm.sh resetadminpassword yournewpass</span><br/>
-                    If you used WebODM Manager to launch WebODM, find the "Reset Password" button within the maintenance panel or within one of WebODM Manager menus.
+                    Wenn Sie WebODM Manager zum Starten von WebODM verwendet haben, finden Sie die Schaltfläche "Kennwort zurücksetzen" im Wartungsfenster oder in einem der WebODM Manager-Menüs.
                 </div>
             </div>
         </div>
