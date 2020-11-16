@@ -41,7 +41,7 @@ def dashboard(request):
 
     # Create first project automatically
     if Project.objects.count() == 0:
-        Project.objects.create(owner=request.user, name=_("Erstes Project"))
+        Project.objects.create(owner=request.user, name=_("First Project"))
 
     return render(request, 'app/dashboard.html', {'title': 'Dashboard',
         'no_processingnodes': no_processingnodes,
@@ -108,7 +108,7 @@ def processing_node(request, processing_node_id):
 
     return render(request, 'app/processing_node.html', 
             {
-                'title': 'Server', 
+                'title': 'Processing Node', 
                 'processing_node': pn,
                 'available_options_json': pn.get_available_options_json(pretty=True)
             })
@@ -142,7 +142,7 @@ def welcome(request):
 
     return render(request, 'app/welcome.html',
                   {
-                      'title': 'Willkommen',
+                      'title': 'Welcome',
                       'firstuserform': fuf
                   })
 
